@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
                 default:
                     throw new IllegalStateException("Unexpected operation: " + operation);
             }
-            resultTextView.setText("Result: " + result);
+            resultTextView.setText(String.valueOf(result));
         } else {
             resultTextView.setText("Please enter both numbers.");
         }
